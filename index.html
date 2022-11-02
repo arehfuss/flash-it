@@ -9,7 +9,82 @@
   <title>Learn</title>
 </head>
 <body>
-  <h1>See How This Looks</h1>
+  <button class="clear btn">
+    <i class="fas fa-trash"></i>Clear Cards
+  </button>
+<h1>Memory Cards
+  <button id="show" class="btn btn-small">
+    <i class="fas fa-plus"></i>Add New Card
+  </button>
+</h1>
+
+<div id="cards-container" class="cards">
+  <div class="card active">
+    <div class="inner-card">
+      <div class="inner-card-front">
+        <p>
+          Who is the Queen of Hearts?
+        </p>
+      </div>
+      <div class="innner-card-back">
+        <p>
+          You found her in the deck.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="inner-card">
+      <div class="inner-card-front">
+        <p>
+          Who is the Queen of Hearts?
+        </p>
+      </div>
+      <div class="innner-card-back">
+        <p>
+          You find her in the deck.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="navigtion">
+  <button id="prev" class="nav-button">
+    <i class="fas fa-arrow-left"></i>
+  </button>
+
+    <p id="current"></p>
+
+  <button id="next" class="nav-button">
+    <i class="fas fa-arrow-right"></i>
+  </button>
+</div>
+
+<div id="add-container" class="add-container">
+  <h1>Add New card
+    <button id="hide" class="btn btn-small btn-ghost">
+      <i class="fas fa-times"></i>
+    </button>
+  </h1>
+
+  <div class="form-group">
+    <label for="question">Question</label>
+    <textarea id="question" placeholder="Enter Question..."></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="Answer">Answer</label>
+    <textarea id="answer" placeholder="Enter Answer..."></textarea>
+  </div>
+
+   <button id="add-card" class="btn">
+    <i class="fas fa-plus">Add Card</i>
+   </button>
+
+</div>
+
   <script src="index.js"></script>
 </body>
 </html>
